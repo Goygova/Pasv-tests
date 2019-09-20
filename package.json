@@ -1,0 +1,27 @@
+{
+	"name": "wdio-sept",
+	"version": "0.1.0",
+	"description": "Super test",
+	"main": "index.js",
+	"scripts": {
+		"test": "wdio wdio.conf.js --spec ./test/cheatsheet/google.js",
+		"test:loginFormDesign": "wdio wdio.conf.js --spec ./test/specs/user/loginForm/design/user_loginForm.design.js",
+		"test:loginFormFunc": "wdio wdio.conf.js --spec ./test/specs/user/loginForm/func/user_loginForm_func.js",
+		"test:userRegisterForm": "wdio wdio.conf.js --spec ./test/specs/user/registerForm/func/user_registerForm_func.js"
+	},
+	"author": "Anastasia Goygova",
+	"license": "ISC",
+	"devDependencies": {
+		"@wdio/cli": "^5.12.5",
+		"@wdio/dot-reporter": "^5.12.1",
+		"@wdio/local-runner": "^5.12.5",
+		"@wdio/mocha-framework": "^5.12.1",
+		"@wdio/selenium-standalone-service": "^5.12.1",
+		"@wdio/spec-reporter": "^5.12.1",
+		"@wdio/sync": "^5.12.3"
+	},
+	"dependencies": {
+		"axios": "^0.19.0",
+		"chai": "^4.2.0"
+	}
+}
